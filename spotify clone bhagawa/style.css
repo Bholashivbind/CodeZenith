@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 55px;
+    background-color: rgb(145, 54, 54);
+    color: rgb(255, 132, 132);
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 46px;
+    border-radius: 55%;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: red;
+    color: rgb(71, 13, 13);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 3px;
+    background-image: url('ramji.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color:  rgb(145, 54, 54);
+    color: rgb(160, 141, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 34px;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 10px;
+}
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: rgb(71, 13, 13);
+    max-width: fit-content;
+    color: rgb(228, 49, 49);
+    margin: 12px;
+   justify-content: space-around;
+    align-items: center;
+    border-radius:35px;
+}
+.songItem img{
+    width: 29px;
+    margin:0 23px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+        cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
