@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #navbar header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .main-section {
+    padding: 20px;
+    margin-left: 350px; /* To accommodate the fixed navbar */
+  }
+  
+  @media (max-width: 768px) {
+    /* Media query for smaller devices */
+    #navbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      
+    }
+    
+    #navbar header {
+      margin: 10px auto;
+    }
+  
+    .main-section {
+      margin-left: 0px;
+    }
+  }
